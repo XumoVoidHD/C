@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n = 4;
+    int n = 5;
     int min = 0; 
 
     for(int i = 1; i <= 2*n-1 ; i++)
@@ -11,18 +11,19 @@ int main()
         {
             int a = i;
 
-            if (i > n) 
+            if (a > n) 
             {
                 a = 2*n-i;
             }
 
             int b = j;
 
-            if (j > n) 
+            if (b > n)
             {
                 b = 2*n-j;
             }
-            if(a<b)
+
+            if(a < b)
             {
                 min = a;
             } 
